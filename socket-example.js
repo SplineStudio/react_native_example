@@ -9,7 +9,6 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-
     switch (action.type) {
         case RETURN_DATA:
             return Object.assign({}, { ...state, ...action.socket });
